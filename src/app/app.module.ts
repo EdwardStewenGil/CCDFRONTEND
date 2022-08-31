@@ -17,6 +17,8 @@ import { Lugar2Component } from './lugar2/lugar2.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
+import { FutbolComponent } from './futbol/futbol.component';
+import { VoleibolComponent } from './voleibol/voleibol.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     ContactoComponent,
     FooterComponent,
+    FutbolComponent,
+    VoleibolComponent,
 
   ],
   imports: [

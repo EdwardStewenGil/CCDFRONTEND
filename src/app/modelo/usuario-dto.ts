@@ -12,6 +12,8 @@ export interface UsuarioDto {
     nombreb?:string;
     identificacionB?:string;
     laborB?:string;
+    evento?:string;
+
 
 }
 

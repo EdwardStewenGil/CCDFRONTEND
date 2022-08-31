@@ -6,13 +6,13 @@ import Swal from 'sweetalert2'
 
 
 @Component({
-  selector: 'app-carrera',
-  templateUrl: './carrera.component.html',
-  styleUrls: ['./carrera.component.css']
+  selector: 'app-futbol',
+  templateUrl: './futbol.component.html',
+  styleUrls: ['./futbol.component.css']
 })
-export class CarreraComponent implements OnInit {
+export class FutbolComponent implements OnInit {
   usuarioDto: UsuarioDto[] = [];
-  nuevoUsuario: UsuarioDto = { nombreA: '', identificacionA: '', edadA: '' , generoA: '', etniaA: '', celularA: '', correoA: '', comunaA: '', nombreb: '', identificacionB: '', laborB: '', evento: 'Ciudadela' };
+  nuevoUsuario: UsuarioDto = { nombreA: '', identificacionA: '', edadA: 'nn ', generoA: '', etniaA: 'nn', celularA: '', correoA: '', comunaA: '', nombreb: 'nn', identificacionB: '', laborB: 'nn', evento: 'Futbol' };
   terminos = ""
 
   constructor(
@@ -26,24 +26,16 @@ export class CarreraComponent implements OnInit {
 
 
     if (this.nuevoUsuario.nombreA == "") {
-      Swal.fire('nombre del asistente no diligenciado')
+      Swal.fire('nombre no diligenciado')
     }
     else if (this.nuevoUsuario.identificacionA == "") {
 
-      Swal.fire('Identificacion del asistente no diligenciada')
+      Swal.fire('Identificacion  no diligenciada')
 
     }
-    else if (this.nuevoUsuario.edadA == "") {
+    else if (this.nuevoUsuario.generoA == "") {
 
-      Swal.fire('Edad del asistente no diligenciada ')
-
-    } else if (this.nuevoUsuario.generoA == "") {
-
-      Swal.fire('Genero del asistente no diligenciado')
-
-    } else if (this.nuevoUsuario.etniaA == "") {
-
-      Swal.fire('Etnia no diligenciada')
+      Swal.fire('Genero no diligenciada')
 
     }
     else if (this.nuevoUsuario.celularA?.length != 10) {
@@ -54,21 +46,19 @@ export class CarreraComponent implements OnInit {
 
       Swal.fire('Correo no diligenciado')
 
-    }  else if (this.nuevoUsuario.comunaA == "") {
+    } else if (this.nuevoUsuario.comunaA == "") {
 
       Swal.fire('Comuna no diligenciada')
 
-    } else if (this.nuevoUsuario.nombreb == "") {
-
-      Swal.fire('Nombre del acompañante no diligenciado')
-
     } else if (this.nuevoUsuario.identificacionB == "") {
 
-      Swal.fire('identificacion del acompañante no diligenciado')
+      Swal.fire('Total de boletas no diligenciada')
 
-    } else if (this.nuevoUsuario.laborB == "") {
+    } else if
 
-      Swal.fire('porfavor diligenciar si el acompañante trabaja en la secretaria de deporte')
+      (this.nuevoUsuario.identificacionB != "1" && this.nuevoUsuario.identificacionB != "2") {
+
+      Swal.fire('El total de boletas debe ser menor a 2 ')
 
     } else if (this.terminos == "") {
 
@@ -103,4 +93,3 @@ export class CarreraComponent implements OnInit {
 
   }
 }
-

@@ -1,0 +1,131 @@
+<app-navbar></app-navbar>
+
+
+<img class="fondo" src="../../assets/V3.webp">
+
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-0">
+    <br />
+    <h3 class="display-4 fw-bold lh-1 mb-3 text-center">Final de Voleibol
+
+    </h3>
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+
+
+            <img src="../../assets/V2.webp" width="100%">
+
+
+
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light" action="">
+                <h2>REGISTRARSE</h2>
+                <br>
+                <br>
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="nombreA" id="nombreA" [(ngModel)]="nuevoUsuario.nombreA"
+                        placeholder="nombre" required>
+                    <label for="floatingPassword">Nombre Completo</label>
+                </div>
+                <br>
+                <div class="form-floating mb-3">
+                    <input class="form-control" name="identificacionA" id="identificacionA"
+                        [(ngModel)]="nuevoUsuario.identificacionA" placeholder="Documento de identidad" required>
+                    <label for="floatingPassword">Documento de identidad
+                    </label>
+                </div>
+
+                <br>
+                <div class="form-floating mb-3">
+
+                    <select class="form-select" aria-label="Default select example" [(ngModel)]="nuevoUsuario.generoA"
+                        id="generoA" placeholder="generoA" name="generoA">
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+                    <label for="floatingInput">Genero</label>
+
+                </div>
+                <br>
+
+                <div class="form-floating mb-3">
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="celularA" id="celularA" [(ngModel)]="nuevoUsuario.celularA"
+                            placeholder="celularA" required>
+                        <label for="floatingPassword">celular</label>
+                    </div>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="correoA" id="correoA" [(ngModel)]="nuevoUsuario.correoA"
+                            placeholder="correoA" required>
+                        <label for="floatingPassword">Correo Electronico</label>
+                    </div>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="comunaA" id="comunaA" [(ngModel)]="nuevoUsuario.comunaA"
+                            placeholder="comunaA" required>
+                        <label for="floatingPassword">Comuna</label>
+                    </div>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="identificacionB" id="identificacionB"
+                            [(ngModel)]="nuevoUsuario.identificacionB" placeholder="identificacionB" required>
+                        <label for="floatingPassword">Cantidad de boletas</label>
+                    </div>
+
+                    <br>
+
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <a href="https://caliciudaddeportiva.com/terminos">Termino y condiciones</a>
+                            <br>
+                            <input type="checkbox" [(ngModel)]="terminos" value="terminos" name="terminos"
+                                id="terminos">
+                            Aceptas terminos y
+                            condiciones
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" (click)="crearUsuario()"
+                        type="submit">Inscribirte</button>
+                    <hr class="my-4">
+                    <small class="text-muted">Al registrarse nos estaremos comunicando via whatsapp.</small>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+
+
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+
+
+            <img class="rounded-lg-3" src="../../assets/V1.webp" width="100%">
+
+
+
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 ">
+            <h1 class="display-4 fw-bold lh-1">Final de Voleibol
+            </h1>
+            <p class="lead">Estaremos entregando entradas para la final de boleivol inscribete para solicitar tus boletas</p>
+
+
+  
+        </div>
+    </div>
+</div>
+
+
+
+
+<app-footer></app-footer>

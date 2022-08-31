@@ -20,9 +20,9 @@
     <tr>
       <th scope="col">Nombre Menor</th>
       <th scope="col">identificacion Menor</th>
-      <th scope="col">Nombre Acompañante</th>
-      <th scope="col">Identificacion Acompañante</th>
       <th scope="col">Celular</th>
+      <th scope="col">Correo </th>
+      <th scope="col">Evento</th>
 
 
     </tr>
@@ -31,9 +31,9 @@
   <tr *ngFor="let usuario of usuarioDto">
       <td>{{usuario.nombreA}}</td>
       <td>{{usuario.identificacionA}}</td>
-      <td>{{usuario.nombreb}}</td>
-      <td>{{usuario.identificacionB}}</td>
       <td>{{usuario.celularA}}</td>
+        <td>{{usuario.correoA}}</td>
+      <td>{{usuario.evento}}</td>
 
   </tr>
 </tbody>
