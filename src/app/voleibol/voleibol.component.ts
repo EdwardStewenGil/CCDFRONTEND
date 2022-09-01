@@ -12,7 +12,7 @@ import Swal from 'sweetalert2'
 })
 export class VoleibolComponent implements OnInit {
   usuarioDto: UsuarioDto[] = [];
-  nuevoUsuario: UsuarioDto = { nombreA: '', identificacionA: '', edadA: 'nn ', generoA: '', etniaA: 'nn', celularA: '', correoA: '', comunaA: '', nombreb: 'nn', identificacionB: '', laborB: 'nn', evento: 'voleibol' };
+  nuevoUsuario: UsuarioDto = { nombreA: '', identificacionA: '', edadA: 'nn ', generoA: '', etniaA: 'nn', celularA: '', correoA: '', comunaA: '', nombreb: '', identificacionB: '', laborB: 'nn', evento: 'voleibol' };
   terminos = ""
 
   constructor(

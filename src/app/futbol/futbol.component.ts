@@ -56,9 +56,9 @@ export class FutbolComponent implements OnInit {
 
     } else if
 
-      (this.nuevoUsuario.identificacionB != "1" && this.nuevoUsuario.identificacionB != "2") {
+      (this.nuevoUsuario.identificacionB != "1" && this.nuevoUsuario.identificacionB != "2" && this.nuevoUsuario.identificacionB != "3") {
 
-      Swal.fire('El total de boletas debe ser menor a 2 ')
+      Swal.fire('El total de boletas debe ser menor a 4 ')
 
     } else if (this.terminos == "") {
 
